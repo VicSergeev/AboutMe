@@ -26,7 +26,7 @@ final class WelcomeViewController: UIViewController {
         blue: 230/255,
         alpha: 1
     )
-    let g = UIColor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
@@ -34,7 +34,6 @@ final class WelcomeViewController: UIViewController {
     }
 
 }
-
 
 extension UIView {
     func addVerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {

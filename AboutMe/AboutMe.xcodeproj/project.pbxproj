@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1816FC9D2B1B209C0017F628 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816FC9C2B1B209C0017F628 /* UserPageViewController.swift */; };
+		1816FC9F2B1B2E910017F628 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816FC9E2B1B2E910017F628 /* BioViewController.swift */; };
 		18B5D3B02B18E74F00D22567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5D3AF2B18E74F00D22567 /* AppDelegate.swift */; };
 		18B5D3B22B18E74F00D22567 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5D3B12B18E74F00D22567 /* SceneDelegate.swift */; };
 		18B5D3B42B18E74F00D22567 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5D3B32B18E74F00D22567 /* LoginViewController.swift */; };
@@ -14,9 +16,13 @@
 		18B5D3B92B18E75100D22567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B5D3B82B18E75100D22567 /* Assets.xcassets */; };
 		18B5D3BC2B18E75100D22567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B5D3BA2B18E75100D22567 /* LaunchScreen.storyboard */; };
 		18EE2D282B19F4B500DDBF50 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE2D272B19F4B500DDBF50 /* WelcomeViewController.swift */; };
+		18EE2D2E2B1A7E5B00DDBF50 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE2D2D2B1A7E5B00DDBF50 /* UserData.swift */; };
+		18EE2D302B1B1A3600DDBF50 /* WelcomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE2D2F2B1B1A3600DDBF50 /* WelcomeTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1816FC9C2B1B209C0017F628 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
+		1816FC9E2B1B2E910017F628 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		18B5D3AC2B18E74F00D22567 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B5D3AF2B18E74F00D22567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B5D3B12B18E74F00D22567 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		18B5D3BB2B18E75100D22567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B5D3BD2B18E75100D22567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18EE2D272B19F4B500DDBF50 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		18EE2D2D2B1A7E5B00DDBF50 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		18EE2D2F2B1B1A3600DDBF50 /* WelcomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,52 @@
 		18B5D3AE2B18E74F00D22567 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				18B5D3AF2B18E74F00D22567 /* AppDelegate.swift */,
-				18B5D3B12B18E74F00D22567 /* SceneDelegate.swift */,
-				18B5D3B32B18E74F00D22567 /* LoginViewController.swift */,
-				18EE2D272B19F4B500DDBF50 /* WelcomeViewController.swift */,
-				18B5D3B52B18E74F00D22567 /* Main.storyboard */,
+				18EE2D2B2B1A7B5B00DDBF50 /* ViewControllers */,
+				18EE2D2C2B1A7B9700DDBF50 /* Models */,
+				18EE2D2A2B1A7B4500DDBF50 /* Storyboards */,
+				18EE2D292B1A7AD600DDBF50 /* App */,
 				18B5D3B82B18E75100D22567 /* Assets.xcassets */,
-				18B5D3BA2B18E75100D22567 /* LaunchScreen.storyboard */,
-				18B5D3BD2B18E75100D22567 /* Info.plist */,
 			);
 			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		18EE2D292B1A7AD600DDBF50 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18B5D3AF2B18E74F00D22567 /* AppDelegate.swift */,
+				18B5D3B12B18E74F00D22567 /* SceneDelegate.swift */,
+				18B5D3BD2B18E75100D22567 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18EE2D2A2B1A7B4500DDBF50 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18B5D3B52B18E74F00D22567 /* Main.storyboard */,
+				18B5D3BA2B18E75100D22567 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		18EE2D2B2B1A7B5B00DDBF50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B5D3B32B18E74F00D22567 /* LoginViewController.swift */,
+				18EE2D272B19F4B500DDBF50 /* WelcomeViewController.swift */,
+				18EE2D2F2B1B1A3600DDBF50 /* WelcomeTabBarViewController.swift */,
+				1816FC9C2B1B209C0017F628 /* UserPageViewController.swift */,
+				1816FC9E2B1B2E910017F628 /* BioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18EE2D2C2B1A7B9700DDBF50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18EE2D2D2B1A7E5B00DDBF50 /* UserData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +188,11 @@
 				18B5D3B42B18E74F00D22567 /* LoginViewController.swift in Sources */,
 				18EE2D282B19F4B500DDBF50 /* WelcomeViewController.swift in Sources */,
 				18B5D3B02B18E74F00D22567 /* AppDelegate.swift in Sources */,
+				1816FC9F2B1B2E910017F628 /* BioViewController.swift in Sources */,
+				18EE2D2E2B1A7E5B00DDBF50 /* UserData.swift in Sources */,
+				18EE2D302B1B1A3600DDBF50 /* WelcomeTabBarViewController.swift in Sources */,
 				18B5D3B22B18E74F00D22567 /* SceneDelegate.swift in Sources */,
+				1816FC9D2B1B209C0017F628 /* UserPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +346,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MF7QC2JX3N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MF7QC2JX3N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
