@@ -2,13 +2,13 @@
 //  TabBarViewController.swift
 //  AboutMe
 //
-//  Created by Vic on 02.12.2023.
+//  Created by Vic on 01.12.2023.
 //
 
 import UIKit
 
 final class WelcomeTabBarViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,7 +16,6 @@ final class WelcomeTabBarViewController: UITabBarController {
         tabBarAppearance.configureWithOpaqueBackground()
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
-
     }
-
 }
+

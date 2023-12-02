@@ -15,15 +15,25 @@ final class LoginViewController: UIViewController {
     private let userLogin = "User"
     private let userPassword = "1111"
     
+    let userData = User.getUser()
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeTabBarVC = segue.destination as? UITabBarController
+        let welcomeTabBarVC = segue.destination as? WelcomeTabBarViewController
         
         welcomeTabBarVC?.viewControllers?.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = userLogin
+                welcomeVC.userName = userData.name
+            } else if let navigationVC = viewController as? UINavigationController {
+                let userPageVC = navigationVC.topViewController as? UserPageViewController
+                userPageVC?.firstname = userData.personData.firstName
+                userPageVC?.lastName = userData.personData.lastName
+                userPageVC?.company = userData.personData.company
+                userPageVC?.division = userData.personData.division
+                userPageVC?.position = userData.personData.position
+                userPageVC?.bio = userData.personData.bio
+                }
             }
         }
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

@@ -135,7 +135,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Victor Sergeev." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8H-1C-duS">
-                                <rect key="frame" x="38" y="130" width="244.5" height="23"/>
+                                <rect key="frame" x="38" y="134" width="244.5" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" systemColor="tableBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -147,10 +147,10 @@
                             <constraint firstItem="Lhb-y8-PnR" firstAttribute="centerX" secondItem="wdS-ze-dCT" secondAttribute="centerX" id="7s5-io-iCl"/>
                             <constraint firstItem="Lhb-y8-PnR" firstAttribute="top" secondItem="Cnv-Ys-jXz" secondAttribute="bottom" constant="273.5" id="Del-Gz-Kth"/>
                             <constraint firstItem="Cnv-Ys-jXz" firstAttribute="centerX" secondItem="wdS-ze-dCT" secondAttribute="centerX" id="E6b-rk-Slk"/>
+                            <constraint firstItem="I8H-1C-duS" firstAttribute="top" secondItem="yMz-jn-Q82" secondAttribute="bottom" constant="8" id="Q8U-Px-T38"/>
                             <constraint firstItem="Cnv-Ys-jXz" firstAttribute="top" secondItem="yMz-jn-Q82" secondAttribute="bottom" constant="35" id="Uo3-Uk-PvP"/>
-                            <constraint firstItem="I8H-1C-duS" firstAttribute="centerX" secondItem="wdS-ze-dCT" secondAttribute="centerX" id="bFp-tc-FXR"/>
+                            <constraint firstItem="I8H-1C-duS" firstAttribute="centerX" secondItem="wdS-ze-dCT" secondAttribute="centerX" id="fWv-Py-dIa"/>
                             <constraint firstItem="yMz-jn-Q82" firstAttribute="centerX" secondItem="wdS-ze-dCT" secondAttribute="centerX" id="ndR-Ia-qeG"/>
-                            <constraint firstItem="I8H-1C-duS" firstAttribute="top" secondItem="yMz-jn-Q82" secondAttribute="bottom" constant="4" id="oLB-JU-7bw"/>
                             <constraint firstItem="yMz-jn-Q82" firstAttribute="top" secondItem="CS4-Xh-BbQ" secondAttribute="top" constant="103" id="vxg-Y0-q1c"/>
                         </constraints>
                     </view>
@@ -167,7 +167,7 @@
         <!--Vic Sergeev-->
         <scene sceneID="Mxt-I8-lNn">
             <objects>
-                <viewController id="f8x-Kt-wi2" customClass="UserPageViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userPage" id="f8x-Kt-wi2" customClass="UserPageViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8cu-RS-fdl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,7 +182,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ngi-c1-7Dr">
-                                <rect key="frame" x="11" y="260.5" width="165" height="137"/>
+                                <rect key="frame" x="11" y="260.5" width="163.5" height="137"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8Pv-Wf-fgf">
                                         <rect key="frame" x="0.0" y="0.0" width="79.5" height="137"/>
@@ -220,35 +220,35 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="bM6-it-uGp">
-                                        <rect key="frame" x="85.5" y="0.0" width="79.5" height="137"/>
+                                        <rect key="frame" x="85.5" y="0.0" width="78" height="137"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fso-fs-6ev">
-                                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wER-8Z-gp0">
-                                                <rect key="frame" x="0.0" y="30" width="65.5" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="30" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Компания:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVp-Fy-L9e">
-                                                <rect key="frame" x="0.0" y="60" width="71" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="60" width="69.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отдел:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zss-HV-Q5g">
-                                                <rect key="frame" x="0.0" y="90" width="46" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="90" width="45" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Должность:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-2L-C9s">
-                                                <rect key="frame" x="0.0" y="120" width="79.5" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="120" width="78" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -290,7 +290,7 @@
         <!--Bio View Controller-->
         <scene sceneID="JgL-vF-rHV">
             <objects>
-                <viewController id="fgD-Uc-wVr" customClass="BioViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userBio" id="fgD-Uc-wVr" customClass="BioViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fFg-Wa-g0b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -312,10 +312,9 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userBio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyJ-V7-sJW">
-                                <rect key="frame" x="16" y="145" width="58" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userBio" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyJ-V7-sJW">
+                                <rect key="frame" x="16" y="136" width="288" height="228"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -325,6 +324,10 @@
                         <constraints>
                             <constraint firstItem="uf9-HW-AiU" firstAttribute="leading" secondItem="9yq-1L-29G" secondAttribute="leading" constant="16" id="5FZ-xW-ivj"/>
                             <constraint firstItem="uf9-HW-AiU" firstAttribute="top" secondItem="fFg-Wa-g0b" secondAttribute="top" constant="92" id="GhT-hM-UZQ"/>
+                            <constraint firstItem="9yq-1L-29G" firstAttribute="bottom" secondItem="gyJ-V7-sJW" secondAttribute="bottom" constant="155" id="eFf-HH-BDw"/>
+                            <constraint firstItem="gyJ-V7-sJW" firstAttribute="leading" secondItem="9yq-1L-29G" secondAttribute="leading" constant="16" id="g0H-9u-mo3"/>
+                            <constraint firstItem="9yq-1L-29G" firstAttribute="trailing" secondItem="gyJ-V7-sJW" secondAttribute="trailing" constant="16" id="iDC-kF-6dF"/>
+                            <constraint firstItem="gyJ-V7-sJW" firstAttribute="top" secondItem="uf9-HW-AiU" secondAttribute="bottom" constant="8" symbolic="YES" id="qSe-7z-cgm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lOb-xX-dtU"/>
@@ -335,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDh-Zu-uNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4794" y="3"/>
+            <point key="canvasLocation" x="4792.5" y="2.112676056338028"/>
         </scene>
         <!--Welcome Tab Bar View Controller-->
         <scene sceneID="Yah-vf-9fF">

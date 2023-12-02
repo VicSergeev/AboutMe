@@ -26,7 +26,7 @@ final class WelcomeViewController: UIViewController {
         blue: 230/255,
         alpha: 1
     )
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)

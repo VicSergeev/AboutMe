@@ -2,7 +2,7 @@
 //  BioViewController.swift
 //  AboutMe
 //
-//  Created by Vic on 02.12.2023.
+//  Created by Vic on 01.12.2023.
 //
 
 import UIKit
@@ -12,7 +12,8 @@ final class BioViewController: UIViewController {
     @IBOutlet var userBioHeaderLabel: UILabel!
     @IBOutlet var userBioContentLabel: UILabel!
     
-    
+    var header: String!
+    var bio: String!
     
     private let primaryColor = UIColor(
         red: 200/255,
@@ -34,5 +35,7 @@ final class BioViewController: UIViewController {
             topColor: primaryColor,
             bottomColor: secondaryColor
         )
+        userBioHeaderLabel.text = header
+        userBioContentLabel.text = bio
     }
 }

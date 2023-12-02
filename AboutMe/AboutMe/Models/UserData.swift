@@ -6,23 +6,37 @@
 //
 
 struct User {
-    let userName: String
-    let userPassword: String
+    let name: String
+    let password: String
     
-    let person = Person()
+    let personData: Person
+    
+    static func getUser() -> User {
+        return User(
+            name: "User",
+            password: "1111",
+            personData: Person(
+                firstName: "Victor",
+                lastName: "Sergeev",
+                company: "Aeroflot",
+                division: "Ground operations",
+                position: "former employee",
+                bio: """
+                Родился в 1988 году в городе Ростове-на-Дону, родители работали в аэропорту, во многом благодаря этому
+                пошел по их стопам, с июля 2007 по октябрь 2022 работал в сфере гражданской авиации на различных должностях.
+                Люблю путешествовать, SUP-сёрфинг, увлекаюсь астрофотографией, иногда варю домашнее пиво, и делаю сидр(сезон).
+                Не люблю летать на самолетах, предпочитаю передвигаться наземным транспортом.
+                """
+            )
+        )
+    }
 }
 
 struct Person {
-    let personName = "Victor"
-    let personLastname = "Sergeev"
-    let personCompany = "Unemployed"
-    let personDivision = "None"
-    let personPosition = "None"
-    let personBio = """
-        Родился в 1988 году в городе Ростове-на-Дону, родители работали в аэропорту, сам с июля 2007 по октябрь 2022
-        работал в сфере гражданской авиации на различных должностях. Люблю SUP-сёрфинг, увлекаюсь астрофотографией.
-        С момента владения своим первым iPhone 3Gs в 2011 загорелся идеей создавать свои приложения, но не мог отказаться
-        от карьеры в авиации. Когда гражданская авиация в первом квартале 2022 в РФ законилась решил попробовать осуществить
-        свою мечту.
-"""
+    var firstName: String
+    var lastName: String
+    var company: String
+    var division: String
+    var position: String
+    var bio: String
 }

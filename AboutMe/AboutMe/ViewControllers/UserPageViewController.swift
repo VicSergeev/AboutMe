@@ -2,7 +2,7 @@
 //  UserPageViewController.swift
 //  AboutMe
 //
-//  Created by Vic on 02.12.2023.
+//  Created by Vic on 01.12.2023.
 //
 
 import UIKit
@@ -17,7 +17,13 @@ final class UserPageViewController: UIViewController {
     @IBOutlet var personDivisionLabel: UILabel!
     @IBOutlet var personPostionLabel: UILabel!
     
-    
+    var firstname: String!
+    var lastName: String!
+    var company: String!
+    var division: String!
+    var position: String!
+    var bio: String!
+    var header: String!
     
     private let primaryColor = UIColor(
         red: 200/255,
@@ -32,15 +38,29 @@ final class UserPageViewController: UIViewController {
         blue: 230/255,
         alpha: 1
     )
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let userBio = segue.destination as? BioViewController
+        
+        userBio?.header = "\(firstname ?? "") \(lastName ?? "")"
+        userBio?.bio = "\(bio ?? "")"
+        
+        }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userPicImageView.layer.cornerRadius = userPicImageView.frame.width / 2
+        
         view.addVerticalGradientLayer(
             topColor: primaryColor,
             bottomColor: secondaryColor
         )
         
-        userPicImageView.layer.cornerRadius = userPicImageView.frame.width / 2
+        personNameLabel.text = firstname
+        personLastNameLabel.text = lastName
+        personCompanyLabel.text = company
+        personDivisionLabel.text = division
+        personPostionLabel.text = position
     }
-
 }
